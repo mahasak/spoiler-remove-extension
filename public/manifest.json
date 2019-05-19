@@ -6,5 +6,6 @@
     "default_popup": "index.html",
     "default_title": "Spoiler Remove"
   },
+  "permissions": ["storage"],
   "version": "1.0"
 }
