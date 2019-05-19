@@ -6,13 +6,13 @@ import Button from './components/Button';
 class App extends React.Component {
 
   componentDidMount() {
-    const banList = ['avenger', 'infinity', 'endgame', 'Promises'];
+    const banList = ['avenger', 'infinity', 'endgame', 'Promises', 'โปรแกรมเมอร์ไทย'];
     const rule = new RegExp(banList.join('|'),'i')
     setInterval(function() {  
       Array.from(document.querySelectorAll('[role="article"]'))
         .filter(d => rule.test(d.innerText))
         .forEach(d => d.remove())
-    }, 2000)
+    }, 500)
   }
   
   render() {
