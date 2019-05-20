@@ -1,7 +1,7 @@
 {
   "name": "spoiler-remove",
   "version": "0.1.0",
-  "description": "Description",
+  "description": "This extension is to remove post with ban list from facebook timeline",
   "main": "src/js/main.js",
   "scripts": {
     "build": "parcel build src/js/main.js -d src/build/ -o main.js",

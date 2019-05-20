@@ -1,5 +1,5 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react'
+import ReactDOM from 'react-dom'
 
 class App extends React.Component {
     constructor(props) {
@@ -25,7 +25,7 @@ class App extends React.Component {
             position: "absolute",
             top: "5px",
             left: "3px"
-          };
+          }
 
         return (
             <div style={divStyle}>
@@ -40,16 +40,16 @@ chrome.runtime.onMessage.addListener((request, sender, response) => {
     // If message is injectApp
     if (request.injectApp) {
         // Inject our app to DOM and send response
-        injectApp(request.banList);
+        injectApp(request.banList)
         response({
             startedExtension: true,
-        });
+        })
     }
-});
+})
 
 function injectApp(banList) {
-    const newDiv = document.createElement("div");
-    newDiv.setAttribute("id", "chromeExtensionReactApp");
-    document.body.appendChild(newDiv);
-    ReactDOM.render(<App banList={banList} />, newDiv);
+    const newDiv = document.createElement("div")
+    newDiv.setAttribute("id", "chromeExtensionReactApp")
+    document.body.appendChild(newDiv)
+    ReactDOM.render(<App banList={banList} />, newDiv)
 }

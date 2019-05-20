@@ -12,7 +12,7 @@ window.onload = () => {
                 tabs[0].id,
                 { injectApp: true, banList: document.getElementById('banList').value },
                 response => window.close()
-            );
-        });
-    };
+            )
+        })
+    }
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 class Button extends React.Component {
     render() {
@@ -11,6 +11,6 @@ class Button extends React.Component {
 }
 
 Button.propTypes = {
-};
+}
 
-export default Button;
+export default Button
