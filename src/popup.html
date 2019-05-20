@@ -5,39 +5,43 @@
  value "popup.html".
  -->
 <html>
-  <head>
+
+<head>
+    <meta charset="UTF-8">
     <title>Getting Started Extension's Popup</title>
     <style type="text/css">
-      body {
-        margin: 10px;
-        white-space: nowrap;
-      }
+        body {
+            margin: 10px;
+            white-space: nowrap;
+        }
 
-      #container {
-        align-items: center;
-        display: flex;
-        justify-content: space-between;
-      }
+        #container {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+        }
 
-      .start {
-        border: 1px solid #000;
-        border-radius: 15px;
-        padding: 5px 15px;
-        cursor: pointer;
-      }
+        .start {
+            border: 1px solid #000;
+            border-radius: 15px;
+            padding: 5px 15px;
+            cursor: pointer;
+        }
     </style>
 
     <script src="js/popup.js"></script>
-  </head>
+</head>
 
-  <body>
+<body>
     <div id="container">
-     <!--
+        <!--
       Render react app in the visited website when the .start button is clicked.
      -->
-      <button class="start">
-        Kill Spoiler
-      </button>
+        <textarea rows="3" id="banList">Promises,โปรแกรมเมอร์ไทย</textarea>
+        <button class="start">
+            Set Banlist
+        </button>
     </div>
-  </body>
+</body>
+
 </html>

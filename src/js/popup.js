@@ -1,5 +1,6 @@
 window.onload = () => {
     const $startButton = document.querySelector('.start');
+    let banList = document.getElementById('banList').value
     window.console.log('test');
   
     $startButton.onclick = () => {
@@ -11,7 +12,7 @@ window.onload = () => {
         // Send message to script file
         chrome.tabs.sendMessage(
           tabs[0].id,
-          { injectApp: true },
+          { injectApp: true , banList: document.getElementById('banList').value},
           response => window.close()
         );
       });
