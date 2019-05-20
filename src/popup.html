@@ -27,6 +27,27 @@
             padding: 5px 15px;
             cursor: pointer;
         }
+
+        .div-table {
+            display: table;
+            width: auto;
+            background-color: #eee;
+            border: 1px solid #666666;
+            border-spacing: 5px;
+        }
+
+        .div-table-row {
+            display: table-row;
+            width: auto;
+            clear: both;
+        }
+
+        .div-table-col {
+            float: left;
+            display: table-column;
+            width: 200px;
+            background-color: #ccc;
+        }
     </style>
 
     <script src="js/popup.js"></script>
@@ -34,10 +55,23 @@
 
 <body>
     <div id="container">
-        <textarea rows="3" id="banList">Promises,โปรแกรมเมอร์ไทย</textarea>
-        <button class="start">
-            Set Banlist
-        </button>
+        <div class="div-table">
+            <div class="div-table-row">
+                <div class="div-table-col" align="center">Spoiler Remove</div>
+            </div>
+            <div class="div-table-row">
+                <div class="div-table-col">
+                    <textarea rows="3" id="banList">Promises,โปรแกรมเมอร์ไทย</textarea>
+                </div>
+            </div>
+            <div class="div-table-row">
+                <div class="div-table-col">
+                    <button class="start">
+                        Set Banlist
+                    </button>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 

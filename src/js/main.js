@@ -20,8 +20,15 @@ class App extends React.Component {
     }
 
     render() {
+        var divStyle = {
+            zIndex: 9999999999999,
+            position: "absolute",
+            top: "5px",
+            left: "3px"
+          };
+
         return (
-            <div>
+            <div style={divStyle}>
                 Spoiler remover activated !!
             </div>
         )
